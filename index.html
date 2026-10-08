@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MIHINDUCC Portal</title>
+  <title>MIHINDUCC School Portal</title>
 
   <link rel="icon" type="image/png" href="mihinducc_logo.png">
   <link rel="apple-touch-icon" href="mihinducc_logo.png">
-
   <link rel="manifest" href="manifest.json">
 
   <meta name="theme-color" content="#0b2d5c">
@@ -24,27 +22,45 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial, sans-serif;
       background: #f4f7fb;
-      color: #0b2d5c;
+      font-family: Arial, sans-serif;
     }
 
     .box {
       text-align: center;
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+      width: 280px;
     }
 
     img {
-      width: 110px;
-      height: 110px;
+      width: 150px;
+      height: 150px;
       object-fit: contain;
     }
 
     h2 {
-      margin: 15px 0 5px;
+      color: #0b2d5c;
+      margin: 15px 0 8px;
     }
 
     p {
       color: #666;
+      margin-bottom: 25px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #0b2d5c;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -52,16 +68,24 @@
 <body>
 
   <div class="box">
+
     <img src="mihinducc_logo.png" alt="MIHINDUCC">
+
     <h2>MIHINDUCC</h2>
-    <p>Opening School Digital Portal...</p>
+
+    <p>School Digital Portal</p>
+
+    <button onclick="openPortal()">
+      OPEN PORTAL
+    </button>
+
   </div>
 
   <script>
-    setTimeout(function () {
+    function openPortal() {
       window.location.href =
         "https://script.google.com/macros/s/AKfycbxU4nxOhDbcpZrTgP-FpElWh6okzdYOZA2aNT1mXl-pua343SVnhoSo-dgQFP1onwa0/exec";
-    }, 1200);
+    }
   </script>
 
 </body>
