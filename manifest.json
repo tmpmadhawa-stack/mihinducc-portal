@@ -1,0 +1,16 @@
+{
+  "name": "MIHINDUCC School Digital Portal",
+  "short_name": "MIHINDUCC",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2d5c",
+  "icons": [
+    {
+      "src": "mihinducc_logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
